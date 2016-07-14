@@ -88,7 +88,14 @@ module Git
     end
 
     def to_unsafe
-      pointerof(@buf)
+      pointerof(@oid)
     end
+  end
+
+  enum Sorting
+    None = 0,
+    Topological = 1 << 0
+    Time = 1 << 1
+    Reverse = 1 << 2
   end
 end
