@@ -11,7 +11,7 @@ describe Git do
 
   it "reports libgit2's version" do
     version = Git.version
-    version.should eq([0, 23, 0])
+    version.should eq([0, 24, 0])
   end
 
   it "exposes libgit2's features" do
